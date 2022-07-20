@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="835.0" style="-fx-background-color: #0CC2ED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.courseproject.controllers.DocPatintsController">
+    <children>
+        <Label layoutX="17.0" layoutY="108.0" prefHeight="37.0" prefWidth="74.0" text="Имя врача:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="157.0" prefHeight="21.0" prefWidth="124.0" text="Фамилия врача:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="doctorName" layoutX="140.0" layoutY="114.0" />
+        <TextField fx:id="doctorSureName" layoutX="140.0" layoutY="155.0" />
+        <Button fx:id="doctorAddButton" layoutX="652.0" layoutY="478.0" mnemonicParsing="false" onAction="#buttonAddDoctor" prefHeight="25.0" prefWidth="149.0" text="Поиск пациентов" />
+        <Label fx:id="error" layoutX="148.0" layoutY="27.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+        <Label layoutX="15.0" layoutY="17.0" prefHeight="37.0" prefWidth="805.0" text="ИНФОРМАЦИЯ О ПАИЦЕНТАХ ВРАЧА" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="fromDocAddtoMenuButton" layoutX="652.0" layoutY="23.0" mnemonicParsing="false" onAction="#fromDocAddtoMenu" prefHeight="25.0" prefWidth="149.0" text="Назад в меню" />
+      <Label layoutX="17.0" layoutY="77.0" prefHeight="37.0" prefWidth="275.0" text="Необходимые поля для заполнения:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="18.0" layoutY="188.0" prefHeight="279.0" prefWidth="783.0">
+        <columns>
+          <TableColumn fx:id="patientName" prefWidth="169.0" text="Имя пациента" />
+          <TableColumn fx:id="patientSureName" prefWidth="162.0" text="Фамилия пацинета" />
+            <TableColumn fx:id="patientAge" prefWidth="122.0" text="Возраст пациента" />
+            <TableColumn fx:id="patientDiagnosId" prefWidth="152.0" text="Код диагноза пациента" />
+            <TableColumn fx:id="PatientDepartmentId" prefWidth="177.0" text="Номер отделения пациента" />
+        </columns>
+      </TableView>
+    </children>
+</Pane>

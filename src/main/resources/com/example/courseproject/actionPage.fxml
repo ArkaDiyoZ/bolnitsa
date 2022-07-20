@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="835.0" style="-fx-background-color: #0CC2ED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.courseproject.controllers.ActionController">
+    <children>
+        <Button fx:id="fromActionDocToDocInfoButton" layoutX="301.0" layoutY="121.0" mnemonicParsing="false" onAction="#fromActionDocToDocInfo" prefHeight="43.0" prefWidth="233.0" text="Информация о докторе" />
+        <Label layoutX="320.0" layoutY="36.0" prefHeight="43.0" prefWidth="195.0" text="Меню действий" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="fromAcToInfoPatientButton" layoutX="301.0" layoutY="170.0" mnemonicParsing="false" onAction="#fromAcToInfoPatient" prefHeight="43.0" prefWidth="233.0" text="Инфоормация о пациенте" />
+      <Button fx:id="fromDepartActToMenuButton" layoutX="301.0" layoutY="273.0" mnemonicParsing="false" onAction="#fromDepartActToMenu" prefHeight="43.0" prefWidth="233.0" text="Назад в меню" />
+      <Button fx:id="fromActionToPatientDocButton" layoutX="301.0" layoutY="222.0" mnemonicParsing="false" onAction="#fromActionToPatientDoc" prefHeight="43.0" prefWidth="233.0" text="Информация о пациентах врача" />
+    </children>
+</AnchorPane>

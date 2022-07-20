@@ -34,4 +34,9 @@ public class MainMenuController{
         main.changeScene("departmentAdd.fxml");
     }
 
+    @FXML
+    public void fromMainToAction(ActionEvent event) throws  IOException{
+        Main main = new Main();
+        main.changeScene("actionPage.fxml");
+    }
 }

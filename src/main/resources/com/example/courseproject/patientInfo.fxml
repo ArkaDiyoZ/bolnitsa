@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="835.0" style="-fx-background-color: #0CC2ED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.courseproject.controllers.PatientInfoController">
+    <children>
+        <Label layoutX="25.0" layoutY="27.0" prefHeight="37.0" prefWidth="805.0" text="ПОИСК ИНФОРМАЦИИ О ПАЦИЕНТЕ" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="patientName" layoutX="192.0" layoutY="123.0" />
+        <Label layoutX="25.0" layoutY="117.0" prefHeight="37.0" prefWidth="118.0" text="Имя пациента:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="fromPatientInfoToMenuButton" layoutX="652.0" layoutY="23.0" mnemonicParsing="false" onAction="#fromPatientInfoToMenu" prefHeight="25.0" prefWidth="149.0" text="Назад в меню" />
+        <Button fx:id="SearchPatientInfoButton" layoutX="634.0" layoutY="478.0" mnemonicParsing="false" onAction="#SearchPatientInfo" prefHeight="25.0" prefWidth="167.0" text="Поиск информации" />
+        <Label layoutX="25.0" layoutY="154.0" prefHeight="37.0" prefWidth="149.0" text="Фамилия пациента:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="patientSurname" layoutX="192.0" layoutY="160.0" />
+        <Label layoutX="25.0" layoutY="245.0" prefHeight="37.0" prefWidth="149.0" text="Диагноз пациента:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="282.0" prefHeight="37.0" prefWidth="149.0" text="Отделение пациента:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="319.0" prefHeight="37.0" prefWidth="149.0" text="Возраст:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="patientDiagnosId" layoutX="192.0" layoutY="251.0" />
+        <TextField fx:id="patientDepartId" layoutX="192.0" layoutY="288.0" />
+        <TextField fx:id="patientAge" layoutX="192.0" layoutY="325.0" />
+      <Label layoutX="25.0" layoutY="80.0" prefHeight="37.0" prefWidth="233.0" text="Необходимые поля для поиска" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

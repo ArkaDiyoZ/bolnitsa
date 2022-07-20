@@ -15,5 +15,6 @@
       </Label>
       <Button fx:id="fromMainToAddPatientButton" layoutX="301.0" layoutY="178.0" mnemonicParsing="false" onAction="#fromMainToAddPatinet" prefHeight="43.0" prefWidth="233.0" text="Пациенты" />
       <Button fx:id="fromMainToAddDepartButton" layoutX="301.0" layoutY="236.0" mnemonicParsing="false" onAction="#fromMainToAddDepart" prefHeight="43.0" prefWidth="233.0" text="Отделения" />
+      <Button fx:id="fromMainToActions" layoutX="301.0" layoutY="294.0" mnemonicParsing="false" onAction="#fromMainToAction" prefHeight="43.0" prefWidth="233.0" text="Действия" />
    </children>
 </AnchorPane>
